@@ -4,8 +4,6 @@ export default function Index() {
   return (
     
     <View style={styles.container}>
-      <Text style={styles.texto}>Aplicativo muito legal.</Text>
-      <Text style={styles.texto}>Vai comprar?</Text>
       
       <Image
       style={styles.felipe}
@@ -19,7 +17,8 @@ export default function Index() {
       source={require('../assets/images/lula.jpeg')}
       />
       <View style={styles.text}>
-        <Text style={styles.fonte}>Lula lindo!</Text>
+        <Text style={styles.fonte}>Lula lindinho
+        </Text>
         <Text style={styles.funcao}>13</Text>
         </View>
       </View>
@@ -31,7 +30,7 @@ export default function Index() {
       />
       <View style={styles.text}>
         <Text style={styles.fonte}>Anderson votou em marçal</Text>
-        <Text>28</Text>
+        <Text style={styles.funcao}>28</Text>
       </View>
       </View>
 
@@ -41,7 +40,7 @@ export default function Index() {
       source={require('../assets/images/papa.jpg')}
       />
       <View style={styles.text}>
-        <Text style={styles.fonte}>Papa morto</Text>
+        <Text style={styles.fonte}>Papa vivo</Text>
         <Text style={styles.funcao}>I</Text>
         </View>
       </View>
@@ -63,25 +62,29 @@ export default function Index() {
 
 const styles = StyleSheet.create ({
   container: {
-    padding: 15,
+    padding: 25,
+    with: "100%",
+    height: 250,
+    //marginTop: 5,
   },
   texto: {
-    padding: 3,
+    //fontSize: 15,
+    //color: '#006400',
   },
   felipe: {
-    width: 350,
+    width: "100%",
     height: 200,
     marginBottom: 20,
     borderRadius: 20,
     marginTop: 10,
   },
   imagens: {
-    width: 70,
+    width: 65,
     marginBottom: 15,
-    height: 70,
+    height: 65,
     borderRadius: 200 / 2,
-    margin:10,
-    
+    margin: 10,
+    borderColor: 'blue',
   },
   containerImagem: {
     display: "flex",
@@ -98,7 +101,7 @@ const styles = StyleSheet.create ({
     marginLeft: 20,
   },
   fonte: {
-    fontSize: 20,
+    fontSize: 17,
   },
   funcao: {
     color: 'red',
