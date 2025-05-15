@@ -10,7 +10,6 @@ export default function Index() {
       source={require('../assets/images/felipe_neto.jpg')}
       />
 
-
       <View style={styles.containerImagem}>
       <Image
       style={styles.imagens}
@@ -63,14 +62,16 @@ export default function Index() {
 const styles = StyleSheet.create ({
   container: {
     padding: 25,
-    with: "100%",
+    width: "100%",
     height: 250,
     //marginTop: 5,
   },
+
   texto: {
     //fontSize: 15,
     //color: '#006400',
   },
+  
   felipe: {
     width: "100%",
     height: 200,
@@ -78,14 +79,17 @@ const styles = StyleSheet.create ({
     borderRadius: 20,
     marginTop: 10,
   },
+
   imagens: {
     width: 65,
     marginBottom: 15,
     height: 65,
     borderRadius: 200 / 2,
     margin: 10,
-    borderColor: 'blue',
+    borderColor: 'white',
+    borderWidth: 2,
   },
+
   containerImagem: {
     display: "flex",
     flexDirection: "row",
@@ -96,13 +100,16 @@ const styles = StyleSheet.create ({
     //padding: 10,
     borderRadius: 10,
   },
+
   text: {
     flexGrow: 1,
     marginLeft: 20,
   },
+
   fonte: {
     fontSize: 17,
   },
+
   funcao: {
     color: 'red',
   },
